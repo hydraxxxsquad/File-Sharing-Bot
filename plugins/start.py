@@ -94,7 +94,7 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
+    text = "<b>MAAF, VIDEO HANYA UNTUK MEMBER!!!\n\nLu harus join channel untuk bisa akses video, join Channel</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
